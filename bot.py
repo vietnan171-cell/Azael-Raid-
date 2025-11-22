@@ -18,11 +18,10 @@ def load_token():
             return data.get("TOKEN")
     except FileNotFoundError:
         print(Fore.RED + "Error: token.json not found.")
-return None
+        return None
     except json.JSONDecodeError:
         print(Fore.RED + "Error: Invalid JSON format in token.json.")
         return None
-
 def display_logo():
     logo = '''
 ░░█ ▄▀█ █▀▀ █▄▀ █▀█ █▀ █▀█ ▄▀█ █▀▄▀█
