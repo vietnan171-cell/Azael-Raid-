@@ -17,7 +17,8 @@ def load_token():
             data = json.load(file)
             return data.get("TOKEN")
     except FileNotFoundError:
-        print(Fore.RED + "Error: token.json not found."        return None
+        print(Fore.RED + "Error: token.json not found.")
+return None
     except json.JSONDecodeError:
         print(Fore.RED + "Error: Invalid JSON format in token.json.")
         return None
