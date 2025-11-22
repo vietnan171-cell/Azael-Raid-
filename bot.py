@@ -120,4 +120,4 @@ if __name__ == "__main__":
             if TOKEN:
                 bot.run(TOKEN)  # Run again with the new token
     else:
-        print(Fore.RED + "❌ Error: Unable to load or set a token.
+        print(Fore.RED + "❌ Error: Unable to load or set a token."
